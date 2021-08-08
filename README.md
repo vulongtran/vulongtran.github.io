@@ -130,6 +130,7 @@ Project Link: [https://github.com/vulongtran/vulongtran.github.io](https://githu
 * Website hosting[Github Pages](https://pages.github.com/)
 * Website template - [Pavo Template by Inovatik](https://onepagelove.com/pavo)
 * Login plugin widget used [Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
+* Okta Sign-In Widget Github page [Okta Sign-In Widget](https://github.com/okta/okta-signin-widget#using-the-okta-cdn)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
