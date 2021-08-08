@@ -3,13 +3,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/vulongtran/vulongtran.github.io">
-    <img src="https://pages.vulongtran.com/images/dejavu-logo.png" alt="DejaVu" width="600" height="200">
+    <img src="https://pages.vulongtran.com/images/dejavu-logo.png" alt="DejaVu" width="1200" height="400">
   </a>
 
   <h3 align="center">DejaVu</h3>
 
   <p align="center">
-    project_description
+    This project is built to demonstrate how to create a simple website with a login section.
     <br />
     <a href="https://github.com/vulongtran/vulongtran.github.io"><strong>Explore the docs »</strong></a>
     <br />
@@ -30,7 +30,7 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      This project is built to dmeonstrate how to use a website
+      This project is built to demonstrate how to create a simple website with a login section.
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
