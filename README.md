@@ -65,6 +65,8 @@ This is an example of how to list things you need to use the software and how to
 * npm
   ```sh
   npm install npm@latest -g
+  # Run this command in your project root folder.
+  npm install @okta/okta-signin-widget@5.9.2
   ```
 
 ### Installation
