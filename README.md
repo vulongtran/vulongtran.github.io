@@ -61,12 +61,22 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+This is a list of things you need to use install on your computer.
 * npm
+To install or upgrade on your Mac computer. 
   ```sh
+  # If you do not have it already, use Homebrew to install node 
+  brew install node
+
+  # Check that you have the latest npm
   npm install npm@latest -g
+  
   # Run this command in your project root folder.
+  npm install @okta/okta-signin-widget --save
+
+  # (Optional) Run this command in your project root folder if you want to use a specific Sign In Widget version e.g. 5.9.2.
   npm install @okta/okta-signin-widget@5.9.2
+
   ```
 
 ### Installation
@@ -154,6 +164,7 @@ Project Link: [https://github.com/vulongtran/vulongtran.github.io](https://githu
 * Website template - [Pavo Template by Inovatik](https://onepagelove.com/pavo)
 * Login plugin widget used [Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
 * Okta Sign-In Widget Github page [Okta Sign-In Widget](https://github.com/okta/okta-signin-widget#using-the-okta-cdn)
+* [Node Version Manager] (https://github.com/nvm-sh/nvm#installing-and-updating)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
