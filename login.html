@@ -189,11 +189,11 @@
         }).then(function(tokens) {
           oktaSignIn.authClient.tokenManager.setTokens(tokens);
           oktaSignIn.remove();
-          console.log(`Hi ${idToken.claims.email}!`);
 
           const idToken = tokens.idToken;
           document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
           document.getElementById("logout").style.display = 'block';
+          console.log(token);
 
           if (token.status === 'SUCCESS') {
             var token = signInWidget.tokenManager.get(key);
