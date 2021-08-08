@@ -168,7 +168,6 @@
             }
         ],
         */
-        signOutLink: 'https://pages.vulongtran.com/login.html',
         baseUrl: "https://dev-121714.oktapreview.com",
         clientId: "0oa10ubady8VwyUF00h8",
         redirectUri: 'https://pages.vulongtran.com/oauth2/callback', // redirect in list of OIDC app redirect URIs
@@ -218,9 +217,12 @@
 
       function logout() {
         oktaSignIn.authClient.signOut();
-        location.redirect('/login.html');
+        location.redirect('/');
       }
     </script>
+
+
+
 
     <!-- Footer -->
     <div class="footer">
