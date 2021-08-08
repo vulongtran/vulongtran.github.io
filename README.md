@@ -99,10 +99,6 @@ To embed the Sign-in Widget using Okta's CDN, we will include the following JS a
 
 Please do note that the CDN URLs contain a version number. This number should be the same for both the Javascript and the CSS file and match a version on the Okta's [releases page](https://github.com/okta/okta-signin-widget/releases).
 
-Test Release link [/releases page](/releases).
-Test Release link [../releases page](../releases).
-Test Release link [../../releases page](../../releases).
-
 
 
 <!-- USAGE EXAMPLES -->
@@ -113,12 +109,16 @@ Use this space to show useful examples of how a project can be used. Additional 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 
-
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/vulongtran/vulongtran.github.io/issues) for a list of proposed features (and known issues).
 
+
+<!-- RELEASES -->
+## Releases
+
+To view releases, see: [../../releases page](../../releases).
 
 
 <!-- CONTRIBUTING -->
