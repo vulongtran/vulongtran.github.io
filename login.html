@@ -127,23 +127,24 @@
             //smsRecovery: true,                // Enable SMS-based account recovery
             //callRecovery: true,               // Enable voice call-based account recovery
             router: true,                       // Leave this set to true for the API demo
-            autopush: false,
+            autopush: true,                     // Auto push verify option
+            selfServiceUnlock: true,            // Self Service unlock
         },
 
         helpLinks: {
             help: 'https://www.vulongtran.com/ask-for-help',
-            forgotPassword: 'https://vulongtran.com/forgot-password',
-            unlock: 'https://vulongtran.com/unlock-account',
+            // forgotPassword: 'https://vulongtran.com/forgot-password',
+            // unlock: 'https://vulongtran.com/unlock-account',
+            // factorPage: {
+            //    text: 'Need help with MFA?',
+            //    href: 'https://acme.com/mfa-help',
+            // },
             custom: [
-            {
-                text: 'DejaVu',
-                href: 'https://app.vulongtran.com'
-            },
-            {
-                text: 'Vu Long Tran',
-                href: 'https://www.vulongtran.com/'
-            },
-
+                {
+                    text: 'Custom link - DejaVu',
+                    href: 'https://app.vulongtran.com',
+                    target: '_blank',
+                },
             ]
         },
 
