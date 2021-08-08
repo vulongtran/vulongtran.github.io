@@ -125,9 +125,10 @@ Project Link: [https://github.com/vulongtran/vulongtran.github.io](https://githu
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements/ References
-* [Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
-* [Github Pages](https://pages.github.com/)
-* [Pavo Template by Inovatik](https://onepagelove.com/pavo)
+* Website hosting[Github Pages](https://pages.github.com/)
+* Website template - [Pavo Template by Inovatik](https://onepagelove.com/pavo)
+* Login plugin widget used [Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
