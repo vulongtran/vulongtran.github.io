@@ -114,8 +114,8 @@
                     <!-- Start of Okta Sign-in Widget the sign-in form -->
                     <div id="messageBox" class="jumbotron" style="text-align: center;">Please log in by entering your credentials below.</div>
                     <script src="https://global.oktacdn.com/okta-signin-widget/5.9.2/js/okta-sign-in.min.js" type="text/javascript"></script>
-                    <div id="okta-login-container"></div>
-                    <script type="text/javascript">
+                    <div id="okta-login-container">
+                        <script type="text/javascript">
                           var oktaSignIn = new OktaSignIn({
                             logo: 'images/dejavu-logo.png',
                             baseUrl: "https://dev-121714.oktapreview.com",
@@ -169,6 +169,7 @@
                             });
                           }
                         </script>
+                    </div>
                     <!-- End of Okta Sign-in Widget the sign-in form -->
                     <!-- end of text-box -->
 
