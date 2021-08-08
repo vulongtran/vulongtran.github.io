@@ -115,57 +115,28 @@
                     <div id="messageBox" class="jumbotron" style="text-align: center;">Please log in by entering your credentials below.</div>
                     <div id="okta-login-container">
                         <script type="text/javascript">
-                          var oktaSignIn = new OktaSignIn({
-                            baseUrl: "https://dev-121714.oktapreview.com",
-                            clientId: "0oawp38adiL4i1KYC0h7",
-                            redirectUri: 'https://dev-121714.oktapreview.com', // redirect in list of OIDC app redirect URIs
-                            authParams: {
-                              issuer: "default", // authorisation server
-                              responseType: ['token', 'id_token'],
-                              scopes: ['openid', 'email', 'profile'],
-                              pkce: true,
-                              display: 'page'
-                            },
-                            idpDisplay: "SECONDARY",
-                            idps: [{
-                              type: 'FACEBOOK', id: '0oa10eudmy03uus0H0h8',
-                              type: 'GOOGLE', id: '0oa10evo5ppi6d41o0h8'
-                               }]
-                          });
-                    
-                          if (oktaSignIn.token.hasTokensInUrl()) {
-                            oktaSignIn.token.parseTokensFromUrl(
-                              // If we get here, the user just logged in.
-                              function success(res) {
-                                var accessToken = res[0];
-                                var idToken = res[1];
-                    
-                                oktaSignIn.tokenManager.add('accessToken', accessToken);
-                                oktaSignIn.tokenManager.add('idToken', idToken);
-                    
-                                window.location.hash='';
-                                document.getElementById("messageBox").innerHTML = "Greetings, " + idToken.claims.email + "Welcome, you have just logged in! :)";
-                              },
-                              function error(err) {
-                                console.error(err);
-                              }
-                            );
-                          } else {
-                            oktaSignIn.session.get(function (res) {
-                              // If we get here, the user is already signed in.
-                              if (res.status === 'ACTIVE') {
-                                document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.given_name + res.login + "! You are *still* logged in! :)";
-                                return;
-                              }
-                              oktaSignIn.renderEl(
-                                { el: '#okta-login-container' },
-                                function success(res) {},
-                                function error(err) {
-                                  console.error(err);
+                            var signIn = new OktaSignIn(
+                            {
+                                baseUrl: 'https://{yourOktaDomain}',
+                                clientId: '{{clientId of your OIDC app}}'
+                                redirectUri: '{{redirectUri configured in OIDC app}}',
+                                authParams: {
+                                pkce: false,
+                                responseType: 'code'
                                 }
-                              );
+                            }
+                            );
+
+                            // When the authorization flow is complete there will be a redirect to Okta.
+                            // Okta's servers will process the information and then redirect back to your application's `redirectUri`
+                            // If succesful, an authorization code will exist in the URL as the "code" query parameter
+                            // If unsuccesful, there will be an "error" query parameter in the URL
+                            signIn.showSignInAndRedirect({
+                            // Assumes there is an empty element on the page with an id of 'osw-container'
+                            el: '#osw-container'
+                            }).catch(function(error) {
+                            // Handle error
                             });
-                          }
                         </script>
                     </div>
                     <!-- End of Okta Sign-in Widget the sign-in form -->
