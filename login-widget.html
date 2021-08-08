@@ -175,57 +175,6 @@
                             }
 
                             signInWidget.renderEl({el: '#widget-container'}, widgetSuccessCallback, widgetErrorCallback);
-        
-
-                          var oktaSignIn = new OktaSignIn({                            authParams: {
-                              issuer: "default", // authorisation server
-                              responseType: ['token', 'id_token'],
-                              scopes: ['openid', 'email', 'profile'],
-                              pkce: true,
-                              display: 'page'
-                            },
-                            idpDisplay: "SECONDARY",
-                            idps: [{
-                              type: 'FACEBOOK', id: '0oa10eudmy03uus0H0h8',
-                              type: 'GOOGLE', id: '0oa10evo5ppi6d41o0h8'
-                               }]
-                          });
-                    
-                          if (oktaSignIn.token.hasTokensInUrl()) {
-                            oktaSignIn.token.parseTokensFromUrl(
-                              // If we get here, the user just logged in.
-                              function success(res) {
-                                var accessToken = res[0];
-                                var idToken = res[1];
-                    
-                                oktaSignIn.tokenManager.add('accessToken', accessToken);
-                                oktaSignIn.tokenManager.add('idToken', idToken);
-                    
-                                window.location.hash='';
-                                document.getElementById("messageBox").innerHTML = "Greetings, " + idToken.claims.email + "Welcome, you have just logged in! :)";
-                              },
-                              function error(err) {
-                                console.error(err);
-                              }
-                            );
-                          } else {
-                            oktaSignIn.session.get(function (res) {
-                              // If we get here, the user is already signed in.
-                              if (res.status === 'ACTIVE') {
-                                document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.given_name + res.login + "! You are *still* logged in! :)";
-                                return;
-                              }
-                              oktaSignIn.renderEl(
-                                { el: '#okta-login-container' },
-                                function success(res) {},
-                                function error(err) {
-                                  console.error(err);
-                                }
-                              );
-                            });
-                          }
-                        </script>
-                    </div>
                     <!-- End of Okta Sign-in Widget the sign-in form -->
                     <!-- end of text-box -->
 
