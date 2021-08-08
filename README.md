@@ -92,7 +92,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/vulongtran/vulongtran.github.ioissues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/vulongtran/vulongtran.github.io/issues) for a list of proposed features (and known issues).
 
 
 
@@ -102,9 +102,9 @@ See the [open issues](https://github.com/vulongtran/vulongtran.github.ioissues) 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/coolfeature`)
+3. Commit your Changes (`git commit -m 'Add some cool feature'`)
+4. Push to the Branch (`git push origin feature/cool feature`)
 5. Open a Pull Request
 
 
