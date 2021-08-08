@@ -160,12 +160,14 @@ Project Link: [https://github.com/vulongtran/vulongtran.github.io](https://githu
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements/ References
-* Website hosting[Github Pages](https://pages.github.com/)
-* Website template - [Pavo Template by Inovatik](https://onepagelove.com/pavo)
-* Login plugin widget used [Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
-* Okta Sign-In Widget Github page [Okta Sign-In Widget](https://github.com/okta/okta-signin-widget#using-the-okta-cdn)
-* [Node Version Manager] (https://github.com/nvm-sh/nvm#installing-and-updating)
-
+* [Okta Developer - Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
+* [Okta Developer - Add User Authentication to Your JavaScript App](https://developer.okta.com/code/javascript/)
+* [Okta Developer - Style the self-hosted Okta Sign-In Widget](https://developer.okta.com/docs/guides/style-the-widget/style-self-hosted/)
+* [Okta Developers/ Okta APIs - OpenID Connect & OAuth 2.0 API](https://developer.okta.com/docs/reference/api/oidc/)
+* [Github - Okta Sign-In Widget](https://github.com/okta/okta-signin-widget#using-the-okta-cdn)
+* [Github - Okta Sign-In Widget - login.properties](https://github.com/okta/okta-signin-widget/blob/master/packages/%40okta/i18n/src/properties/login.properties)
+* [Website hosting - Github Pages](https://pages.github.com/)
+* [Website template - Pavo Template by Inovatik](https://onepagelove.com/pavo)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
