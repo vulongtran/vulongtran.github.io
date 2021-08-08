@@ -81,6 +81,26 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 
+#### Okta CDN
+
+This demo website will use Okta's login assets directly from Okta's CDN. We are using this as:
+1. It's the fastest easy way to get started with the widget, and/or
+2. Want to keep things simple
+3. We do not have an existing build website design that is already leveraging external dependencies such as [npm](https://www.npmjs.com/).
+
+To embed the Sign-in Widget using Okta's CDN, we will include the following JS and CSS files in our website HTML:
+
+```html
+<!-- Latest CDN production Javascript and CSS -->
+<script src="https://global.oktacdn.com/okta-signin-widget/5.9.1/js/okta-sign-in.min.js" type="text/javascript"></script>
+
+<link href="https://global.oktacdn.com/okta-signin-widget/5.9.1/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
+```
+
+Please do note that the CDN URLs contain a version number. This number should be the same for both the Javascript and the CSS file and match a version on the Okta's [releases page](https://github.com/okta/okta-signin-widget/releases).
+
+Test Release link [releases page](/releases).
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
