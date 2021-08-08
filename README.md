@@ -30,7 +30,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      This project is built to demonstrate how to create a simple website with a login section.
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -52,8 +51,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://pages.vulongtran.com)
+This project is built to demonstrate how to create a simple website with a login section.
+[![DejaVu demo website here]](https://pages.vulongtran.com)
 
 <!-- GETTING STARTED -->
 ## Getting Started
