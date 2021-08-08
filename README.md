@@ -163,6 +163,7 @@ Project Link: [https://github.com/vulongtran/vulongtran.github.io](https://githu
 * [Okta Developer - Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
 * [Okta Developer - Add User Authentication to Your JavaScript App](https://developer.okta.com/code/javascript/)
 * [Okta Developer - Style the self-hosted Okta Sign-In Widget](https://developer.okta.com/docs/guides/style-the-widget/style-self-hosted/)
+* [Okta Developer - Customization examples](https://developer.okta.com/docs/guides/style-the-widget/customization-examples/#per-application-customization)
 * [Okta Developers/ Okta APIs - OpenID Connect & OAuth 2.0 API](https://developer.okta.com/docs/reference/api/oidc/)
 * [Github - Okta Sign-In Widget](https://github.com/okta/okta-signin-widget#using-the-okta-cdn)
 * [Github - Okta Sign-In Widget - login.properties](https://github.com/okta/okta-signin-widget/blob/master/packages/%40okta/i18n/src/properties/login.properties)
