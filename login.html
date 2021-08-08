@@ -192,6 +192,13 @@
           document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
           document.getElementById("logout").style.display = 'block';
 
+          if (token.status === 'SUCCESS') {
+            var token = signInWidget.tokenManager.get(key);
+            console.log("Logged in to Okta and issued token:");
+            console.log(token);
+            console.log("Reload this page to start over.");
+            alert("Logged in! Check your developer console for details");
+        }
         }).catch(function(err) {
           console.error(err);
         });
