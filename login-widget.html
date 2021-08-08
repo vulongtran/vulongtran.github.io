@@ -113,6 +113,9 @@
                     <!-- <p class="mb-5">We shall log in using the Okta Sign-in Widget.</p> -->
                     <!-- Start of Okta Sign-in Widget the sign-in form -->
                     <div id="messageBox" class="jumbotron" style="text-align: center;">Please log in by entering your credentials below.</div>
+                    <div id="messageBox" class="jumbotron">
+                        You are not logged in. Get outta here! Shoo! >:S
+                      </div>
                     <div id="okta-login-container">
                         <script type="text/javascript">
                              const oktaSignIn = new OktaSignIn({
@@ -151,8 +154,6 @@
                             }
 
                             signInWidget.renderEl({el: '#widget-container'}, widgetSuccessCallback, widgetErrorCallback);
-
-                            
                         </script>
                     </div>
                     <!-- End of Okta Sign-in Widget the sign-in form -->
