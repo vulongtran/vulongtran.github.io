@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/vulongtran/vulongtran.github.io">
-    <img src="https://pages.vulongtran.com/images/dejavu-logo.png" alt="DejaVu" width="1200" height="400">
+    <img src="https://pages.vulongtran.com/images/dejavu-logo.png" alt="DejaVu">
   </a>
 
   <h3 align="center">DejaVu</h3>
