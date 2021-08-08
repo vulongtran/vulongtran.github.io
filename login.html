@@ -105,6 +105,29 @@
     </div>
     <script type="text/javascript">
       const oktaSignIn = new OktaSignIn({
+        // Enable or disable widget functionality with the following options. Some of these features require additional configuration in your Okta admin settings. Detailed information can be found here: https://github.com/okta/okta-signin-widget#okta-sign-in-widget
+        // Look and feel changes:
+        logo: 'images/dejavu-logo.png', // Try changing "okta.com" to other domains, like: "workday.com", "splunk.com", or "delmonte.com"
+        language: 'en',                       // Try: [fr, de, es, ja, zh-CN] Full list: https://github.com/okta/okta-signin-widget#language-and-text
+        i18n: {
+            //Overrides default text when using English. Override other languages by adding additional sections.
+            'en': {
+            'primaryauth.title': 'Sign In',   // Changes the sign in text
+            'primaryauth.submit': 'Sign In',  // Changes the sign in button
+            // More e.g. [primaryauth.username.placeholder,  primaryauth.password.placeholder, needhelp, etc.].
+            // Full list here: https://github.com/okta/okta-signin-widget/blob/master/packages/@okta/i18n/dist/properties/login.properties
+            }
+        },
+        // Changes to widget functionality
+        features: {
+            registration: true,                 // Enable self-service registration flow
+            rememberMe: true,                   // Setting to false will remove the checkbox to save username
+            //multiOptionalFactorEnroll: true,  // Allow users to enroll in multiple optional factors before finishing the authentication flow.
+            //selfServiceUnlock: true,          // Will enable unlock in addition to forgotten password
+            //smsRecovery: true,                // Enable SMS-based account recovery
+            //callRecovery: true,               // Enable voice call-based account recovery
+            router: true,                       // Leave this set to true for the API demo
+        },
         baseUrl: "https://dev-121714.oktapreview.com",
         clientId: "0oa10ubady8VwyUF00h8",
         redirectUri: 'https://pages.vulongtran.com/login/callback', // redirect in list of OIDC app redirect URIs
