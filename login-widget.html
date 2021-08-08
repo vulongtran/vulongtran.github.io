@@ -143,7 +143,12 @@
                             console.error(err);
                           });
                         });
-                  
+
+                        function success(res) {
+                        if (res.status === 'SUCCESS') {
+                            res.session.setCookieAndRedirect('https://dev-121714.oktapreview.com/app/UserHome');
+                        }
+                        
                         function logout() {
                           oktaSignIn.authClient.signOut();
                           location.reload();
