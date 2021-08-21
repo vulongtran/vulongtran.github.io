@@ -43,7 +43,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -158,8 +158,8 @@ Project Link: [https://github.com/vulongtran/vulongtran.github.io](https://githu
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements/ References
+<!-- ACKNOWLEDGEMENTS & REFERENCES -->
+## References
 * [Okta Developer - Okta Sign-In Widget Guide](https://developer.okta.com/code/javascript/okta_sign-in_widget/)
 * [Okta Developer - Add User Authentication to Your JavaScript App](https://developer.okta.com/code/javascript/)
 * [Okta Developer - Style the self-hosted Okta Sign-In Widget](https://developer.okta.com/docs/guides/style-the-widget/style-self-hosted/)
