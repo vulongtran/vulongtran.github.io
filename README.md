@@ -52,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 This project is built to demonstrate how to create a simple website with a login section.
-[![DejaVu demo website here]](https://pages.vulongtran.com)
+[[DejaVu demo website here]](https://pages.vulongtran.com)
 
 <!-- GETTING STARTED -->
 ## Getting Started
