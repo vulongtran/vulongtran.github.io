@@ -127,7 +127,6 @@
                     <h2 class="mb-3">Okta Login Options</h2>
                     <p>There are various login options.</p>
                     <p>There are several ways to use the Okta Sign-in Widget:
-
                         <li>
                             <ul>Okta-hosted signin page (Default)(https://youroktadomain.okta.com). Okta provides a default signin page for your organization, hosted at your organization's Okta URL.</ul>
                             <ul>Okta-hosted signin page (Customised URL)(https://sso.dejavuguides.com). Okta supports an option to create a custom domain with a highly customizable Okta-hosted signin page.</ul>
@@ -159,9 +158,7 @@
                                 </span>
                                 <div class="media-body">
                                     <h5>Okta-hosted signin page (default)                                    </h5>
-                                    <p>Okta provides a signin page, available at your organization's URL which allows the user to complete the entire authorization flow, start a SSO (Single Sign-On) session, and set the Okta session cookie in the web browser. This page can be customized with a background image and logo. By default, signing in on this page will redirect the user to the Okta user dashboard.
-                                        The default Okta-hosted signin page can also be used to authenticate a user in an OIDC application. Your app can redirect to a sigin-in page to perform the authentication flow after which Okta will redirect back to the app callback. Okta provides SDKs in many languages to help construct the redirect URL and handle the login callback as part of the hosted flow.
-                                        Okta provides several complete sample applications which demonstrate how to use the Okta hosted flow. 
+                                    <p>Okta provides a signin page, available at your organization's URL which allows the user to complete the entire authorization flow, start a SSO (Single Sign-On) session, and set the Okta session cookie in the web browser. This page can be customized with a background image and logo. By default, signing in on this page will redirect the user to the Okta user dashboard. 
                                     </p>
                                 </div> 
                             </li>
@@ -200,8 +197,7 @@
                                     <h5>Okta Sign-in Widget Embedded (self-hosted)</h5>
                                     <p>
                                         For a completely seamless experience, which also allows for the highest level of customization, the Sign-In Widget can be embedded directly into your application. This allows full use of the widget's configuration and api.
-                                        Using an embedded widget, client-side web and native apps can avoid the round-trip redirect of the hosted flow. An embedded widget is able to perform the OIDC flow and return OAuth tokens directly within the application. See showSignInToGetTokens.
-                                        Server-side web applications using the authorization code flow will complete the OIDC flow and receive OAuth tokens on the server, so they must use a redirect flow. These apps should use showSignInAndRedirect.
+                                        Using an embedded widget, client-side web and native apps can avoid the round-trip redirect of the hosted flow. An embedded widget is able to perform the OIDC flow and return OAuth tokens directly within the application.
                                     </p>
                                 </div>
                             </li>
