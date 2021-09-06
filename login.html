@@ -100,15 +100,17 @@
     <!-- end of header -->
 
   <body>
+    <!-- logged on/ logged out messaging -->
     <div class="container">
-      <h1 class="text-center">Login</h1>
       <div id="messageBox" class="jumbotron">
         You are not logged in. Please sign in. >:S
       </div>
-      <!-- where the sign-in form will be displayed -->
+
       <div id="okta-login-container"></div>
       <button id="logout" class="button" onclick="logout()" style="display: none">Logout</button>
     </div>
+
+    <!-- where the sign-in form will be displayed -->
     <script type="text/javascript">
       const oktaSignIn = new OktaSignIn({
         // Enable or disable widget functionality with the following options. Some of these features require additional configuration in your Okta admin settings. Detailed information can be found here: https://github.com/okta/okta-signin-widget#okta-sign-in-widget
