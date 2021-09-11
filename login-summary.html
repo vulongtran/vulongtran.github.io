@@ -131,29 +131,6 @@
                             <li class="media">
                                 <span class="fa-stack">
                                     <span class="fas fa-circle fa-stack-2x"></span>
-                                    <span class="fa-stack-1x">1</span>
-                                </span>
-                                <div class="media-body">
-                                    <h5>Okta Hosted Sign-in Widget (Okta hosted)</h5>
-                                    <p>Okta Hosted Sign-in Widget is an Okta hosted sign-in page, where the Sign-in Widget is:</p>
-                                    <ul class="list-unstyled"> 
-                                        <li>Hosted on your organisation’s Okta URL.</li>
-                                        <li>A default sign-in page for your organization, that is provided by Okta.</li>
-                                    </ul>
-                                    <a class="btn-solid-reg mb-5" href="https://dev-121714.oktapreview.com/">Okta hosted</a>
-                                </div> 
-                            </li>
-                        </ul>
-                    </div> <!-- end of card -->
-                    <!-- end of card -->
-
-
-                    <!-- Card -->
-                    <div class="card">
-                        <ul class="list-unstyled">
-                            <li class="media">
-                                <span class="fa-stack">
-                                    <span class="fas fa-circle fa-stack-2x"></span>
                                     <span class="fa-stack-1x">2</span>
                                 </span>
                                 <div class="media-body">
@@ -164,6 +141,28 @@
                                         <li>Sign-in Widget is embedded directly into your application. This can be your website, a Single Page App, Android or iOS application, etc.</li>
                                     </ul>
                                     <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
+                                </div> 
+                            </li>
+                        </ul>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <ul class="list-unstyled">
+                            <li class="media">
+                                <span class="fa-stack">
+                                    <span class="fas fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x">1</span>
+                                </span>
+                                <div class="media-body">
+                                    <h5>Okta Hosted Sign-in Widget (Okta hosted)</h5>
+                                    <p>Okta Hosted Sign-in Widget is an Okta hosted sign-in page, where the Sign-in Widget is:</p>
+                                    <ul class="list-unstyled"> 
+                                        <li>Hosted on your organisation’s Okta URL.</li>
+                                        <li>A default sign-in page for your organization, that is provided by Okta.</li>
+                                    </ul>
+                                    <a class="btn-solid-reg mb-5" href="https://dev-121714.oktapreview.com/">Okta hosted</a>
                                 </div> 
                             </li>
                         </ul>
@@ -184,14 +183,6 @@
                 <div class="col-xl-10 offset-xl-1">                    
                     <h2 class="mb-4">User journeys</h2>
                     <p class="mb-5">You are able to decide how you want your users to log in. It's completely up to you. Here are details about the user journeys that they would take:</p>
-                    <div class="text-box mb-5">
-                        <h3>Okta Hosted Sign-in Widget (Okta hosted)</h3>
-                        <img class="img-fluid mb-5" src="images/okta-hosted-widget.png" alt="alternative">
-                        <ul class="list-unstyled"> 
-                            <li>User journey - Okta provides a signin page, available at your organization's URL which allows the user to complete the entire authorization flow, start a SSO (Single Sign-On) session, and set the Okta session cookie in the web browser. By default, signing in on this page will redirect the user to the Okta user dashboard.</li>
-                        </ul>
-                        <a class="btn-solid-reg mb-5" href="https://dev-121714.oktapreview.com/">Okta hosted</a>
-                    </div> 
 
                     <div class="text-box mb-5">
                         <h3>Application Hosted Sign-in Widget (Self hosted)</h3>
@@ -203,6 +194,16 @@
                         </ul>
                         <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
                     </div> 
+
+                    <div class="text-box mb-5">
+                        <h3>Okta Hosted Sign-in Widget (Okta hosted)</h3>
+                        <img class="img-fluid mb-5" src="images/okta-hosted-widget.png" alt="alternative">
+                        <ul class="list-unstyled"> 
+                            <li>User journey - Okta provides a signin page, available at your organization's URL which allows the user to complete the entire authorization flow, start a SSO (Single Sign-On) session, and set the Okta session cookie in the web browser. By default, signing in on this page will redirect the user to the Okta user dashboard.</li>
+                        </ul>
+                        <a class="btn-solid-reg mb-5" href="https://dev-121714.oktapreview.com/">Okta hosted</a>
+                    </div> 
+
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -220,6 +221,18 @@
                     <h2 class="mb-4">Customisations</h2>
 
                     <div class="text-box mb-5">
+                        <h3>Application Hosted Sign-in Widget (Self hosted)</h3>
+                        <ul class="list-unstyled"> 
+                            <li>You can customise your website and/or application as you normally would.</li>
+                            <li>You can also customise the Sign-In Widget that has been embedded in your application. This includes enabling self registration, self-service password reset, self-service account unlock, etc.</li>
+                            <li>Sample URLs can look like (<a href="https://pages.vulongtran.com/login">https://pages.vulongtran.com/login</a>).</li>
+                            <li>Other Sign in widget properties you can consider can be viewed here, <a href="https://github.com/okta/okta-signin-widget/blob/master/packages/%40okta/i18n/src/properties/login.properties">Okta Sign in Widget> login.properties</a></li>
+                        </ul>
+                        <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
+                    </div> 
+                </div> <!-- end of col -->
+
+                    <div class="text-box mb-5">
                         <h3>Okta Hosted Sign-in Widget (Okta hosted)</h3>
                         <ul class="list-unstyled"> 
                             <li>You also have options to customise your Okta-hosted signin page, including:</li>
@@ -232,16 +245,6 @@
                         </ul>
                     </div> 
 
-                    <div class="text-box mb-5">
-                        <h3>Application Hosted Sign-in Widget (Self hosted)</h3>
-                        <ul class="list-unstyled"> 
-                            <li>You can customise your website and/or application as you normally would.</li>
-                            <li>You can also customise the Sign-In Widget that has been embedded in your application. This includes enabling self registration, self-service password reset, self-service account unlock, etc.</li>
-                            <li>Sample URLs can look like (<a href="https://pages.vulongtran.com/login">https://pages.vulongtran.com/login</a>).</li>
-                        </ul>
-                        <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
-                    </div> 
-                </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
