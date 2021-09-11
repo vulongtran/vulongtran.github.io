@@ -1215,11 +1215,11 @@ a:hover.back-to-top {
 }
 
 
-.ex-basic-1 .text-box .fa-stack-2x {
+.ex-basic-1 .col-xl-10 .fa-stack-2x {
 	color: #ff6e84;
 }
 
-.ex-basic-1 .text-box .fa-stack-1x {
+.ex-basic-1 .col-xl-10 .fa-stack-1x {
 	color: #ffffff;
 	font-weight: 700;
 	line-height: 2.125rem;
