@@ -1214,17 +1214,6 @@ a:hover.back-to-top {
 	background-color: #f1f9fc;
 }
 
-
-.ex-basic-1 .col-xl-10 .fa-stack-2x {
-	color: #ff6e84;
-}
-
-.ex-basic-1 .col-xl-10 .fa-stack-1x {
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 2.125rem;
-}
-
 .ex-cards-1 .card {
 	border: none;
 	background-color: transparent;
