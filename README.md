@@ -98,12 +98,11 @@ This demo website will use Okta's login assets directly from Okta's CDN. We are 
 2. Want to keep things simple
 3. We do not have an existing build website design that is already leveraging external dependencies such as [npm](https://www.npmjs.com/).
 
-To embed the Sign-in Widget using Okta's CDN, we will include the following JS and CSS files in our website HTML:
+To embed the Sign-in Widget using Okta's CDN, we will place the following JS and CSS files in our website HTML headers:
 
 ```html
-<!-- Latest CDN production Javascript and CSS -->
+<!-- Okta Sign In Widget Javascript and CSS -->
 <script src="https://global.oktacdn.com/okta-signin-widget/5.9.1/js/okta-sign-in.min.js" type="text/javascript"></script>
-
 <link href="https://global.oktacdn.com/okta-signin-widget/5.9.1/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
 ```
 
