@@ -211,8 +211,11 @@
           document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
 
           // Display the Token
-            document.createElement('p').innerHTML = '<b>' + idToken.claims.email + '</b> (email)<br /><b>' + idToken.claims.sub + '</b> (sub)<br /><br />ID Token Response:<br /><code style="word-wrap: break-word;">' + idToken.value + '</code><br /><br/>Parsed from JWT<br />Client ID: <b>' + idToken.clientId + '</b><br />Issuer: <b>' + idToken.issuer + '</b>';
-            document.getElementById('content-jwt').appendChild(document.createElement('p'));
+            const { idToken } = data.tokens;
+
+            const str1 = document.createElement('p');
+            str1.innerHTML = `<b>${idToken.claims.email}</b> (email)<br /><b>${idToken.claims.sub}</b> (sub)<br /><br />Token Response:<br /><code style="word-wrap: break-word;">${JSON.stringify(idToken)}</code><br /><br/>Parsed from JWT<br />Client ID: <b>${authClient.options.clientId}</b><br />Issuer: <b>${authClient.options.issuer}</b>`;
+            document.getElementById('content-jwt').appendChild(str1);
 
           document.getElementById("logout").style.display = 'block';
           console.log(token);
