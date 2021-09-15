@@ -209,6 +209,7 @@
 
           const idToken = tokens.idToken;
           document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
+          console.log(idToken.claims.email)
 
           // Display the Token
             const { idToken } = data.tokens;
