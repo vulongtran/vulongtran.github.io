@@ -210,12 +210,11 @@
           const idToken = tokens.idToken;
           document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
 
-
             // Display the Token
-            var render = function(tokens){
-            document.createElement('p').innerHTML = '<b>' + idToken.claims.email + '</b> (email)<br /><b>' + tokens.idToken.claims.sub + '</b> (sub)<br /><br />ID Token Response:<br /><code style="word-wrap: break-word;">' + tokens.idToken.value + '</code><br /><br/>Parsed from JWT<br />Client ID: <b>' + tokens.idToken.clientId + '</b><br />Issuer: <b>' + tokens.idToken.issuer + '</b>';
-            document.getElementById('content-jwt').appendChild(document.createElement('p'));
-  }
+            {
+                document.createElement('p').innerHTML = '<b>' + idToken.claims.email + '</b> (email)<br /><b>' + idToken.claims.sub + '</b> (sub)<br /><br />ID Token Response:<br /><code style="word-wrap: break-word;">' + idToken.value + '</code><br /><br/>Parsed from JWT<br />Client ID: <b>' + idToken.clientId + '</b><br />Issuer: <b>' + idToken.issuer + '</b>';
+                document.getElementById('content-jwt').appendChild(document.createElement('p'));
+            }
           document.getElementById("logout").style.display = 'block';
           console.log(token);
 
