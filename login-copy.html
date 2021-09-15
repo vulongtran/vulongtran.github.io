@@ -220,6 +220,9 @@
 
           document.getElementById("logout").style.display = 'block';
           console.log(token);
+          
+          //
+          console.log(idToken);
 
           if (token.status === 'SUCCESS') {
             var token = signInWidget.tokenManager.get(key);
