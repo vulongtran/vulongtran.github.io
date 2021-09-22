@@ -135,11 +135,12 @@
                                     <span class="fa-stack-1x">1</span>
                                 </span>
                                 <div class="media-body">
-                                    <h5>Application Hosted Sign-in Widget (Self hosted)</h5>
-                                    <p>Application Hosted Sign-in Widget is embedded directly in your application the Sign-in Widget is:</p>
+                                    <h5>Lifecycle Management Provisioning</h5>
+                                    <p>Automate user onboarding and offboarding with identity lifecycle management</p>
                                     <ul class="list-unstyled"> 
-                                        <li>Hosted on your own website and/or application.</li>
-                                        <li>Sign-in Widget is embedded directly into your application. This can be your website, a Single Page App, Android or iOS application, etc.</li>
+                                        <li>Creating users</li>
+                                        <li>Updating users</li>
+                                        <li>Deprovisioning users</li>
                                     </ul>
                                     <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
                                 </div> 
@@ -157,11 +158,11 @@
                                     <span class="fa-stack-1x">2</span>
                                 </span>
                                 <div class="media-body">
-                                    <h5>Okta Hosted Sign-in Widget (Okta hosted)</h5>
-                                    <p>Okta Hosted Sign-in Widget is an Okta hosted sign-in page, where the Sign-in Widget is:</p>
+                                    <h5>Advanced Lifecycle Management Provisioning</h5>
+                                    <p>Deeper lifecycle management, within the application itself, using the application APIs.</p>
                                     <ul class="list-unstyled"> 
-                                        <li>Hosted on your organisation’s Okta URL.</li>
-                                        <li>A default sign-in page for your organization, that is provided by Okta.</li>
+                                        <li>For example, provision a Google folder for users.</li>
+                                        <li>For example, provisiong Slack channels for user/s.</li>
                                     </ul>
                                     <a class="btn-solid-reg mb-5" href="https://dev-121714.oktapreview.com/">Okta hosted</a>
                                 </div> 
@@ -170,7 +171,7 @@
                     </div> 
                     <!-- end of card -->
 
-                    <!-- Card -->
+                    <!-- 
                     <div class="card">
                         <ul class="list-unstyled">
                             <li class="media">
@@ -190,7 +191,7 @@
                             </li>
                         </ul>
                     </div> 
-                    <!-- end of card -->                    
+                -->                   
 
                 </div> <!-- end of col -->   
             </div> <!-- end of row -->   
@@ -205,27 +206,20 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">                    
                     <h2 class="mb-4">User journeys</h2>
-                    <p class="mb-5">You are able to decide how you want your users to log in. It's completely up to you. Here are details about the user journeys that they would take:</p>
+                    <p class="mb-5">Lifecycle management details</p>
 
                     <div class="text-box mb-5">
 
-                        <h3>Application Hosted Sign-in Widget (Self hosted)</h3>
+                        <h3>Lifecycle Management Provisioning</h3>
                         <img class="img-fluid mb-5" src="images/application-hosted-widget.png" alt="alternative">
                         <ul class="list-unstyled"> 
-                            <li>For a completely seamless experience, which also allows for the highest level of customization, the Sign-In Widget can be embedded directly into your application.</li>
-                            <li>This allows full use of the widget's configuration and APIs.</li>
-                            <li>Using an embedded widget, client-side web and native apps can avoid the round-trip redirect of the hosted flow. An embedded widget is able to perform the OIDC flow and return OAuth tokens directly within the application.</li>
+                            <li>To help you understand Lifecycle Management Provisioning further. If you are looking for a way to automate and create user creation/ user deactivation (provision/ deprovision) of users from Okta to applications and applications to Okta, we can help you facilitate this (via the <a href="https://developer.okta.com/docs/concepts/scim/">SCIM protocol</a>).</li>
+                            <li>As an example, you might have a new user created in a HR application such as Workday or BambooHR, then you can import those users into Okta.</li>
+                            <li>From Okta, you can provision and create new users in other applications such as Google Workspace, Concur.</li>
+                            <li>Additionally, you can provision more than users, and provision the groups and attributes (such as phone number or manager name) to downstream applications such as expense management tool (Concur) which would digest a user's "manager name" OR communications tool (Twilio) which would digest a user's "phone number".</li>
+                            <li></li>
                         </ul>
                         <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
-                    </div> 
-
-                    <div class="text-box mb-5">
-                        <h3>Okta Hosted Sign-in Widget (Okta hosted)</h3>
-                        <img class="img-fluid mb-5" src="images/okta-hosted-widget.png" alt="alternative">
-                        <ul class="list-unstyled"> 
-                            <li>User journey - Okta provides a signin page, available at your organization's URL which allows the user to complete the entire authorization flow, start a SSO (Single Sign-On) session, and set the Okta session cookie in the web browser. By default, signing in on this page will redirect the user to the Okta user dashboard.</li>
-                        </ul>
-                        <a class="btn-solid-reg mb-5" href="https://dev-121714.oktapreview.com/">Okta hosted</a>
                     </div> 
 
                 </div> <!-- end of col -->
@@ -241,32 +235,16 @@
             <div class="row">
 
                 <div class="col-xl-10 offset-xl-1">
-                    <p class="mb-5">You also have options to customise your Okta-hosted signin page, including:</p>
+                    <p class="mb-5">If you need to go deeper into applications</p>
                     
-                    <h2 class="mb-4">Customisations</h2>
+                    <h2 class="mb-4">Advanced Lifecycle Management Workflows</h2>
 
                     <div class="text-box mb-5">
-                        <h3>Application Hosted Sign-in Widget (Self hosted)</h3>
+                        <h3>Advanced Lifecycle Management Workflows</h3>
                         <ul class="list-unstyled"> 
-                            <li>You can customise your website and/or application as you normally would.</li>
-                            <li>You can also customise the Sign-In Widget that has been embedded in your application. This includes enabling self registration, self-service password reset, self-service account unlock, etc.</li>
-                            <li>Sample URLs can look like (<a href="https://pages.vulongtran.com/login">https://pages.vulongtran.com/login</a>).</li>
-                            <li>Other Sign in widget properties you can consider can be viewed here, <a href="https://github.com/okta/okta-signin-widget/blob/master/packages/%40okta/i18n/src/properties/login.properties">Okta Sign in Widget> login.properties</a></li>
-                        </ul>
-                        <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
-                    </div> 
-
-                    <div class="text-box mb-5">
-                        <h3>Okta Hosted Sign-in Widget (Okta hosted)</h3>
-                        <ul class="list-unstyled"> 
-                            <li>You also have options to customise your Okta-hosted signin page, including:</li>
-                                <ul>
-                                    <li>Using a custom domain. Where you can also change the Okta hosted domain to your own custom domain, which is a subdomain of your company's top-level domain.
-                                    <li>Customizing the design of your Okta-hosted signin page. This page can be customized with a background image and logo. </li>
-                                </ul>    
-                            </li>
-                            <li>Sample URLs which are both Okta hosted, Okta provided domain URL (<a href="https://youroktadomain.okta.com">https://youroktadomain.okta.com</a>) or using your own custom domain (<a href="https://sso.dejavuguides.com">https://sso.dejavuguides.com</a>).</li>
-                            <li><a href="https://developer.okta.com/code/javascript/okta_sign-in_widget/">Okta Sign-In Widget Guide</a></li>
+                            <li>For example, provision a Google folder for users.</li>
+                            <li>For example, provisiong Slack channels for user/s.</li>
+                            <li>This is possible for any application API that accepts RESTful APIs</li>
                         </ul>
                         <a class="btn-solid-reg mb-5" href="https://pages.vulongtran.com/login.html">Self hosted</a>
                     </div> 
